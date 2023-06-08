@@ -6,11 +6,6 @@
     padding: 0px;
 }
 
-@font-face {
-    font-family: Bebas-Regular.otf
-    src: url(Bebas-Regular.otf);
-}
-
 /* To redefine an HTML tag, we state the tag and give the new rules inside {} */
 body {
     background-color: rgb(12, 34, 56);
@@ -73,4 +68,20 @@ a:hover {
 .card img {
     max-width: 100%;
     height: auto;
+}
+/* Media query is used to change the layout when screen changes size *
+/* Here the break-point is 800px.
+When the screen is less than 800px wide, we use these styles */
+@media only screen and (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .intro {
+        border: 1px white solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .intro img {
+        display: none;
+    }
 }
