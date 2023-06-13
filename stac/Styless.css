@@ -1,0 +1,87 @@
+/* styless.css is our stylesheet and gives all the rules for how our site will look */
+
+/* The first rule in your stylesheet should always be the universal selector {*} */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* To redefine an HTML tag, we state the tag and give the new rules inside {} */
+body {
+    background-color: rgb(0, 73, 146);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    /* You can set margins and padding in all four sides: top/right/bottom/left */
+    padding: 20px 10px 20px 10px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 0);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: rgb(255, 172, 56);
+    margin-top: 15px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(106, 65, 255);
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(128,138, 159);
+    text-decoration:underline
+}
+
+/* Index page styles */
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+/* Country page styles */
+
+.countrycontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+    margin: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+/* Media query is used to change the layout when screen changes size *
+/* Here the break-point is 800px.
+When the screen is less than 800px wide, we use these styles */
+@media only screen and (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .intro {
+        border: 1px white solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .intro img {
+        display: none;
+    }
+}
