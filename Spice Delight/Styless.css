@@ -1,11 +1,26 @@
+/* styless.css is our stylesheet and gives all the rules for how our site will look */
+
+/* The first rule in your stylesheet should always be the universal selector {*} */
+
 * {
     border: 0px;
     margin: 0px;
     padding: 0px;
 }
 
+/* To redefine an HTML tag, we state the tag and give the new rules inside {} */
+
+body {
+    background-color: white;
+    font-family: 'amaranth, sans serif, advent pro';
+    color: rgb(122, 0, 0);.
+    /* You can set margins and padding in all four sides: top/right/bottom/left */
+    padding: 20px 10px 20px 10px;
+}
+
 .container {
-    display: inline;
+    display: grid;
+    grid-template-columns: 70% 30%;
 }
 
 .aboutus {
