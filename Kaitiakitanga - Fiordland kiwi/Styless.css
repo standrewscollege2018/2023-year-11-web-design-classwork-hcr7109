@@ -2,15 +2,22 @@
 
 h1 {
     color: rgb(84, 50, 16);
-    font-size: 60px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h2 {
     color: rgb(84, 50, 16);
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
     color: rgb(84, 50, 16);
     font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    padding: 10px;
 }
